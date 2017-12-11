@@ -1,11 +1,11 @@
 {
-    "name": "OneWire",
+    "name": "IntoYunIot_OneWire",
     "version": "1.0.0",
     "keywords": "OneWire",
     "description": "单线通讯接口协议，例如DS18系列的温度传感器",
     "repository": {
         "type": "git",
-        "url": "https://github.com/intoyuniot/OneWire.git"
+        "url": "https://github.com/intoyuniot/IntoYunIot_OneWire.git"
     },
 
     "authors": {
