@@ -14,29 +14,26 @@ void OneWire::begin(void)
 
 void OneWire::DIRECT_WRITE_LOW(void)
 {
-    //PIN_MAP[_pin].gpio_peripheral->BRR = PIN_MAP[_pin].gpio_pin;
     pinResetFast(_pin);
 }
 
 void OneWire::DIRECT_MODE_OUTPUT(void)
 {
-    pinMode(_pin,OUTPUT);
+    pinModeFast(_pin, OUTPUT);
 }
 
 void OneWire::DIRECT_WRITE_HIGH(void)
 {
-    //PIN_MAP[_pin].gpio_peripheral->BSRR = PIN_MAP[_pin].gpio_pin;
     pinSetFast(_pin);
 }
 
 void OneWire::DIRECT_MODE_INPUT(void)
 {
-    pinMode(_pin,INPUT);
+    pinModeFast(_pin, INPUT);
 }
 
 uint8_t OneWire::DIRECT_READ(void)
 {
-    //return GPIO_ReadInputDataBit(PIN_MAP[_pin].gpio_peripheral, PIN_MAP[_pin].gpio_pin);
     return pinReadFast(_pin);
 }
 
